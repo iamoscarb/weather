@@ -1,0 +1,39 @@
+<div [ngClass]="weatherInfo.bg">
+  <div class="container form-container">
+    <form [formGroup]="weatherForm" (ngSubmit)="getWeatherCity()">
+      <div class="field has-addons">
+        <div class="control is-expanded">
+          <input class="input is-info" type="text" placeholder="Buscar Ciudad" formControlName="city">
+        </div>
+        <div class="control">
+          <button class="button is-info">
+            <span class="icon has-text-white">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </span>
+          </button>
+        </div>
+      </div>
+    </form>
+
+
+    <div class="is-flex is-flex-direction-row">
+      <div class="column is-half is-align-content-center">
+        <div class="is-flex is-flex-direction-column is-align-items-self-end">
+          <h1 class="is-size-4 has-text-weight-semibold has-text-white">{{weatherInfo.place}}</h1>
+          <h1 class="is-size-1 has-text-weight-bold has-text-white">{{weatherInfo.temp | number}}°</h1>
+          <h3 class="is-size-6 has-text-weight-medium has-text-white">{{weatherInfo.desp}}</h3>
+          <h3 class="is-size-6 has-text-weight-medium has-text-white">
+            Max: {{weatherInfo.maxTemp | number}}° / Min:{{weatherInfo.minTemp | number}}°
+          </h3>
+          <h3 class="is-size-6 has-text-weight-medium has-text-white">Sensación térmica: {{weatherInfo.senceTemp | number}}°</h3>
+        </div>
+      </div>
+      <div class="column is-half is-align-content-center">
+        <img *ngIf="showIcon" [src]="weatherInfo.icon" alt="weather icon" width="300">
+        <p class="is-size-7 is-italic has-text-white">Designed by <a class="has-text-link" href="https://www.freepik.com/author/coolvector">coolvector</a>
+        </p>
+      </div>
+    </div>
+
+  </div>
+</div>

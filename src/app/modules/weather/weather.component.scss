@@ -1,0 +1,100 @@
+@import url('../../../assets/styles/content.scss');
+//clear sky, day
+._01d {
+  background: #cff2fa;
+  background: linear-gradient(90deg, rgba(207, 242, 250, 1) 0%, rgba(156, 217, 230, 1) 35%, rgba(0, 212, 255, 1) 100%);
+}
+
+//clear sky, night
+._01n {
+  background: #020024;
+  background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(31, 31, 79, 1) 35%, rgba(9, 9, 121, 1) 100%);
+}
+
+//few clouds, day
+._02d {
+  background: #cff2fa;
+  background: linear-gradient(36deg, rgba(207, 242, 250, 1) 0%, rgba(156, 217, 230, 1) 46%, rgba(0, 212, 255, 1) 100%);
+}
+
+//few clouds, night
+._02n {
+  background: #2b2828;
+  background: linear-gradient(58deg, rgba(43, 40, 40, 1) 0%, rgba(35, 35, 89, 1) 46%, rgba(53, 53, 143, 1) 100%);
+}
+
+
+//scattered clouds, day
+._03d {
+  background: #b4d0d6;
+  background: linear-gradient(36deg, rgba(180, 208, 214, 1) 27%, rgba(156, 217, 230, 1) 76%, rgba(108, 222, 245, 1) 100%);
+}
+
+//scattered clouds, night
+._03n {
+  background: #2c2a40;
+  background: linear-gradient(51deg, rgba(44, 42, 64, 1) 0%, rgba(76, 76, 115, 1) 35%, rgba(86, 86, 143, 1) 100%);
+}
+
+
+//broken clouds, day
+._04d {
+  background: #b4d0d6;
+  background: linear-gradient(36deg, rgba(180, 208, 214, 1) 14%, rgba(136, 181, 191, 1) 52%, rgba(135, 165, 171, 1) 100%);
+}
+
+//broken clouds, night
+._04n {
+  background: #242330;
+  background: linear-gradient(51deg, rgba(36, 35, 48, 1) 0%, rgba(90, 90, 110, 1) 35%, rgba(78, 78, 130, 1) 100%);
+}
+
+
+//shower rain, day
+._09d {
+  background: #42dba3;
+  background: linear-gradient(46deg, rgba(66, 219, 163, 1) 0%, rgba(149, 221, 185, 1) 51%, rgba(230, 222, 207, 1) 100%);
+}
+
+//shower rain, night
+._09n {
+  background: #779cd4;
+  background: linear-gradient(46deg, rgba(119, 156, 212, 1) 0%, rgba(149, 151, 211, 1) 34%, rgba(242, 242, 242, 1) 100%);
+}
+
+
+//rain, day
+._10d {
+  background: #77d4b2;
+  background: linear-gradient(46deg, rgba(119, 212, 178, 1) 0%, rgba(164, 216, 190, 1) 27%, rgba(230, 222, 207, 1) 100%);
+}
+
+//rain, night
+._10n {
+  background: #8d89b3;
+  background: linear-gradient(46deg, rgba(141, 137, 179, 1) 0%, rgba(92, 87, 138, 1) 34%, rgba(117, 96, 96, 1) 100%);
+}
+
+
+//thunderstorm, day night
+._11d,
+._11n {
+  background: #b07baa;
+  background: linear-gradient(46deg, rgba(176, 123, 170, 1) 0%, rgba(142, 70, 143, 1) 34%, rgba(133, 76, 84, 1) 100%);
+}
+
+
+//snow, day night
+._13d,
+._13n {
+  background: #7bb0aa;
+  background: linear-gradient(46deg, rgba(123, 176, 170, 1) 0%, rgba(116, 133, 166, 1) 32%, rgba(87, 76, 133, 1) 100%);
+}
+
+
+//mist, day
+._50d,
+._50n {
+  background: #ab91b5;
+  background: linear-gradient(46deg, rgba(171, 145, 181, 1) 0%, rgba(158, 114, 157, 1) 21%, rgba(145, 106, 145, 1) 41%);
+}
