@@ -10,12 +10,15 @@ export class WeatherService extends ApiHttpService {
 
   override api = 'https://api.openweathermap.org/data/2.5/';
   override domain = '';
+  private paramDefault = { appid: this.APIKey, units: 'metric', lang: 'es' }
 
   getWeather(data: any): Observable<any> {
-    return this.get(`weather?lat=${data.lat}&lon=${data.lon}&appid=${this.APIKey}`)
+    const params = { ...data, ... this.paramDefault }
+    return this.get(`weather`, { params: params });
   }
 
-  getCityWeather(data: any): Observable<any> {
-    return this.get(`weather?q=${data.city}&appid=${this.APIKey}`)
+  getWeatherForecast(data: any): Observable<any> {
+    const params = { ...data, ... this.paramDefault }
+    return this.get(`forecast`, { params: params });
   }
 }
