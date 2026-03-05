@@ -1,5 +1,5 @@
-<div class="columns" style="height: 100%;">
-  <div class="column">
+<div class="columns">
+  <div class="column m-4">
     <div class="pb-3">
       <!--Input Buscador por Ciudad-->
       <form [formGroup]="weatherForm" (ngSubmit)="getWeatherCity()">
@@ -16,6 +16,7 @@
         </div>
       </form>
     </div>
+
     <!--Zona Info Clima actual-->
     <div class="box fixed-grid is-shadowless" [ngClass]="weatherInfo.bg">
       <div class="is-flex is-flex-direction-column is-align-items-center mb-6 is-hidden-touch">
@@ -64,7 +65,7 @@
     </div>
   </div>
   <!--Zona Info Detalles-->
-  <div class="column is-two-thirds-desktop has-background-white-bis">
+  <div class="column p-4 is-two-thirds-desktop has-background-white-bis">
     <div class="mb-3 is-hidden-touch">
       <h2 class="is-size-3-desktop has-text-weight-bold has-text-info">
         {{weatherInfo.time | uppercase}}</h2>

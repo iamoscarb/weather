@@ -27,7 +27,7 @@ export class WeatherComponent implements OnInit {
   constructor(private service: WeatherService, public _dialog: MatDialog) { }
 
   ngOnInit(): void {
-   navigator.geolocation.getCurrentPosition((position: GeolocationPosition) => {
+    navigator.geolocation.getCurrentPosition((position: GeolocationPosition) => {
       this.getWeatherData({ lat: position.coords.latitude, lon: position.coords.longitude });
     });
 
@@ -139,7 +139,7 @@ export class WeatherComponent implements OnInit {
     return fecha.toLocaleTimeString('es-MX', hourOption);
   }
 
-  formatSingleHour(dt: number){
+  formatSingleHour(dt: number) {
     const fecha = new Date(dt * 1000);
     const hourOption: Intl.DateTimeFormatOptions = {
       hour: 'numeric',
